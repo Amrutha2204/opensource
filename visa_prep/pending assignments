@@ -1,0 +1,9 @@
+def assignments(a, b, c):
+    tneeded = a * b
+    tavailable = c * 24 * 60
+    if tneeded <= tavailable:
+        print("YES")
+    else:
+        print("NO")
+a, b, c = map(int, input().split())
+assignments(a, b, c)
