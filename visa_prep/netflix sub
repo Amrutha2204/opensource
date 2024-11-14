@@ -1,0 +1,7 @@
+def subscription(a, b, c, d):
+    if (a + b >= d) or (a + c >= d) or (b + c >= d):
+        print("YES")
+    else:
+        print("NO")
+a, b, c, d = map(int, input().split())
+subscription(a, b, c, d)
