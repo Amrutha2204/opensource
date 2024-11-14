@@ -1,0 +1,5 @@
+def age(a):
+    age_dif = 15
+    return a - age_dif
+a = int(input())
+print(age(a))
