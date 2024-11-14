@@ -1,0 +1,5 @@
+a = int(input())
+d1 = a * 0.90
+d2 = a - 100
+fp = min(d1, d2)
+print(int(fp))
