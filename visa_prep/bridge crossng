@@ -1,0 +1,7 @@
+a, b, c = map(int, input().split())
+rc = c - b
+if rc < 0:
+    print(0)
+else:
+    max_man = rc // a
+    print(max_man)
