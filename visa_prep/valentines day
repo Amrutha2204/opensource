@@ -1,0 +1,4 @@
+def chocolates(a, b):
+    print(a // b)
+a, b = map(int, input().split())
+chocolates(a, b)
