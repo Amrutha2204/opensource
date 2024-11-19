@@ -1,0 +1,5 @@
+n = int(input())
+mat = [list(map(int, input().split())) for _ in range(n)]
+row = [sum(row) for row in mat]
+col = [sum(mat[i][j] for i in range(n)) for j in range(n)]
+print(" ".join(str(row[i] + col[i]) for i in range(n)))
