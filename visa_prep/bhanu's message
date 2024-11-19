@@ -1,0 +1,14 @@
+n = input().strip()
+if n.startswith('+'):
+    parts = n.split()
+    if len(parts) != 2 or not parts[1].isdigit() or not (1 <= len(parts[0][1:]) <= 2)or len(parts[1]) != 10:
+        print("Incorrect")
+    elif sum(int(d) for d in parts[1]) > 0:
+        print("Correct")
+    else:
+        print("Incorrect")
+else:
+    if n.isdigit() and len(n) == 10 and sum(int(d) for d in n) > 0:
+        print("Correct")
+    else:
+        print("Incorrect")
