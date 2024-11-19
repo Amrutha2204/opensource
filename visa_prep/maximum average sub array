@@ -1,0 +1,11 @@
+def average(nums, k):
+    current = sum(nums[:k])
+    maxi = current
+    for i in range(k, len(nums)):
+        current += nums[i] - nums[i - k]
+        maxi = max(maxi, current)
+    return maxi / k
+N, K = map(int, input().split())
+nums = list(map(int, input().split()))
+result = average(nums, K)
+print(f"{result:.4f}")
