@@ -1,0 +1,12 @@
+n = int(input())
+arr = list(map(int, input().split()))
+k = int(input())
+seen = set()
+for num in arr:
+    complement = k - num
+    if complement in seen:
+        print("true")
+        break
+    seen.add(num)
+else:
+    print("false")
